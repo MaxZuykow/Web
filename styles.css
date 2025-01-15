@@ -162,6 +162,49 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        /* Увеличили отступ */
+        height: 70px;
+        /* Увеличили высоту */
+    }
+
+    .logo-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        /* Добавили небольшой отступ между ссылками */
+    }
+
+    .navbar-links a {
+        padding: 6px 10px;
+        /* Увеличили отступы */
+        font-size: 14px;
+        /* Увеличили шрифт */
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .navbar-links.navbar-left {
+        justify-content: flex-start;
+    }
+
+    .navbar-links.navbar-right {
+        justify-content: flex-end;
+    }
+}
+
 /* ============================================================================================================================================================================== */
 .about-section {
     padding-left: 20px;
@@ -360,6 +403,73 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .about-section {
+        padding: 20px 10px;
+        /* Увеличили отступы */
+        border-radius: 10px;
+        /* Сделали закругление более заметным */
+    }
+
+    .block-blue {
+        position: static;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        /* Увеличили внутренние отступы */
+        font-size: 20px;
+        /* Увеличили шрифт для лучшей читаемости */
+        border-radius: 10px;
+        box-shadow: none;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        /* Увеличили расстояние между элементами */
+        padding: 10px;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        min-height: auto;
+        padding-top: 20px;
+        /* Увеличили верхний отступ */
+        border-radius: 10px;
+        /* Закруглили изображение */
+        margin-bottom: 15px;
+        /* Добавили больше пространства внизу */
+    }
+
+    .about-text {
+        padding-left: 15px;
+        /* Увеличили боковые отступы */
+        padding-right: 15px;
+        max-width: 100%;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .about-text p,
+    .about-text ul li {
+        color: #000;
+        font-size: 22px;
+        /* Сделали текст чуть больше */
+    }
+
+    .about-text ul {
+        padding-left: 15px;
+        /* Добавили отступ для списка */
+        list-style-position: inside;
+    }
+
+    .about-text h2 {
+        font-size: 20px;
+        /* Увеличили заголовок */
+    }
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ============================================================================================================================================================================== */
 .video-container {
@@ -408,6 +518,22 @@ body {
         width: 100%;
         height: auto;
         aspect-ratio: 16/9;
+    }
+}
+@media (max-width: 480px) {
+    .video-container {
+        min-width: 100%;
+        padding: 10px; /* Увеличили отступы */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Сделали тень чуть заметнее */
+        border-radius: 8px; /* Добавили закругление для более аккуратного вида */
+        background-color: #f9f9f9; /* Добавили фон для акцента */
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        border-radius: 8px; /* Закруглили углы iframe */
     }
 }
 
@@ -598,6 +724,48 @@ body {
         order: 3;
     }
 }
+@media (max-width: 480px) {
+    .sportomatic-box {
+        padding: 20px; /* Увеличили внутренние отступы */
+        margin: 15px auto; /* Добавили больше пространства вокруг */
+        border-radius: 10px; /* Добавили закругление */
+        background-color: #f9f9f9; /* Светлый фон для выделения */
+    }
+
+    .content-container {
+        flex-direction: column;
+        gap: 20px; /* Увеличили расстояние между элементами */
+    }
+
+    .image-container {
+        margin: 0 auto 20px; /* Увеличили нижний отступ */
+        width: 95%; /* Немного увеличили ширину */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Сделали тень заметнее */
+        border-radius: 12px; /* Более мягкое закругление */
+        overflow: hidden;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-container-1,
+    .text-container-2 {
+        padding: 20px; /* Увеличили внутренние отступы */
+        line-height: 1.5; /* Улучшили читаемость текста */
+        text-align: center;
+        font-size: 22px; /* Увеличили шрифт для большего экрана */
+        margin-top: 20px; /* Увеличили верхний отступ */
+        background-color: #ffffff; /* Добавили фон */
+        border-radius: 10px; /* Закруглили текстовые блоки */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Лёгкая тень для выделения */
+    }
+
+    .text-container-2 {
+        order: 3;
+    }
+}
 
 /* ============================================================================================================================================================================== */
 .wrapper {
@@ -666,6 +834,38 @@ body {
     .photo-block img {
         border-radius: 8px;
         /* Уменьшение радиуса для более компактного вида */
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 20px; /* Увеличили внутренние отступы */
+        border-radius: 12px; /* Сделали закругление чуть больше */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Смягчили тень */
+        margin-bottom: 25px; /* Увеличили расстояние между блоками */
+        background-color: #f9f9f9; /* Добавили светлый фон */
+    }
+
+    .photo-section {
+        grid-template-columns: 1fr; /* Оставляем одну колонку */
+        gap: 20px; /* Увеличили расстояние между элементами */
+    }
+
+    .photo-block {
+        border-radius: 10px; /* Немного увеличили закругление */
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08); /* Увеличили интенсивность тени */
+        transition: transform 0.2s ease, box-shadow 0.2s ease; /* Добавили плавный переход для эффектов */
+    }
+
+    .photo-block:hover {
+        transform: translateY(-4px); /* Сделали эффект более заметным */
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); /* Усилили тень при наведении */
+    }
+
+    .photo-block img {
+        border-radius: 10px; /* Закругление синхронизировано с блоком */
+        width: 100%; /* Гарантируем, что изображение растянется на всю ширину */
+        height: auto; /* Сохраняем пропорции изображения */
     }
 }
 
@@ -798,6 +998,46 @@ body {
         font-size: 22px;
     }
 }
+
+@media (max-width: 480px) {
+    .sportomatic-box-2 {
+        padding: 25px; /* Увеличили внутренние отступы */
+        border-radius: 12px; /* Сделали закругление более мягким */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Смягчили тень */
+        margin-top: 25px;
+        margin-bottom: 25px; /* Увеличили отступы сверху и снизу */
+        background-color: #f9f9f9; /* Добавили светлый фон */
+    }
+
+    .content-container-2 {
+        flex-direction: column;
+        gap: 20px; /* Увеличили расстояние между элементами */
+        margin-bottom: 20px; /* Увеличили нижний отступ */
+    }
+
+    .image-container-2 {
+        max-width: 100%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Смягчили и уменьшили тень */
+        border-radius: 12px; /* Немного увеличили закругление */
+        overflow: hidden; /* Убедились, что содержимое не выходит за границы */
+    }
+
+    .text-container-3 {
+        padding: 20px; /* Увеличили отступы для комфорта */
+        font-size: 20px; /* Сделали текст чуть больше */
+        line-height: 1.5; /* Улучшили читаемость */
+        border-radius: 12px; /* Закругление синхронизировано с другими элементами */
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Тень более мягкая */
+        max-width: 100%;
+    }
+
+    .title-container-2 h2 {
+        font-size: 24px; /* Увеличили размер заголовка для визуального акцента */
+        text-align: center; /* Центрировали текст для симметрии */
+        margin-bottom: 15px; /* Добавили нижний отступ */
+    }
+}
+
 /* ============================================================================================================================================================================== */
 .text-container-4 {
     flex: 2;
@@ -846,6 +1086,27 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .text-container-4 {
+        padding: 20px; /* Увеличили внутренние отступы для улучшения читаемости */
+        font-size: 20px; /* Сделали текст чуть больше */
+        line-height: 1.6; /* Увеличили межстрочный интервал для комфортного чтения */
+        text-align: center;
+        width: 100%;
+        max-width: 95%; /* Увеличили ширину для лучшего использования пространства */
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Смягчили тень */
+        border-radius: 10px; /* Добавили закругление для современного вида */
+        margin: 15px auto; /* Центрировали и добавили отступы сверху и снизу */
+        background-color: #f9f9f9; /* Добавили светлый фон для акцента */
+    }
+
+    .text-container-4 p {
+        margin: 15px 0; /* Увеличили отступы между параграфами */
+        font-size: 22px; /* Увеличили размер шрифта для акцента на тексте */
+        color: #333; /* Добавили более мягкий цвет текста */
+    }
+}
+
 /* ============================================================================================================================================================================== */
 footer {
     background-color: #000;
@@ -885,5 +1146,4 @@ footer div {
 .link_a {
     text-decoration: none;
     color: inherit;
-  }
-  
+}
