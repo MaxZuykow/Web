@@ -126,6 +126,20 @@ body {
     }
 }
 
+@media (max-width: 550px) {
+    .logo-container {
+        max-width: 10%;
+        height: auto;
+
+    }
+    .navbar-links a {
+        padding: 5px 5px;
+    }
+    .logo-container img {
+        margin-top: 0px;
+    }
+}
+
 @media (max-width: 480px) {
     .navbar {
         display: flex;
@@ -142,7 +156,7 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 15%;
+        max-width: 25%;
         height: auto;
     }
 
