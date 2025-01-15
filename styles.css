@@ -98,8 +98,10 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100px;
-        height: 100px;
+        /* width: 100px; */
+        /* height: 100px; */
+        max-width: 15%;
+        height: auto;
     }
 
     .navbar-links {
@@ -129,7 +131,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 15px;
+        padding: 0 0px;
         /* Увеличили отступ */
         height: 70px;
         /* Увеличили высоту */
@@ -140,6 +142,8 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        max-width: 15%;
+        height: auto;
     }
 
     .navbar-links {
@@ -172,10 +176,10 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 8px; /* Уменьшены боковые отступы */
-        height: 60px; /* Высота остается фиксированной */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавлена легкая тень */
-        position: relative;
+        padding: 0 5px;
+        /* Уменьшены боковые отступы */
+        height: 60px;
+        /* Высота оставлена без изменений */
     }
 
     .logo-container {
@@ -183,39 +187,39 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 10; /* Убедились, что логотип выше других элементов */
-        width: 50px; /* Уменьшены размеры логотипа */
-        height: 50px;
+        z-index: 10;
+        /* Убедились, что логотип будет выше других элементов */
     }
 
     .navbar-links {
         display: flex;
         flex-direction: row;
-        gap: 4px; /* Уменьшено расстояние между ссылками */
-        flex: 1;
+        gap: 5px;
+        /* Уменьшено пространство между ссылками */
+        z-index: 5;
+        /* Для управления слоями в случае перекрытий */
     }
 
     .navbar-links a {
-        padding: 3px 6px; /* Уменьшены внутренние отступы */
-        font-size: 10px; /* Уменьшен размер шрифта */
+        padding: 4px 8px;
+        /* Уменьшены внутренние отступы для кнопок */
+        font-size: 12px;
+        /* Уменьшен размер шрифта */
         text-align: center;
         text-decoration: none;
-        color: #fff; /* Цвет текста */
-        border-radius: 3px; /* Небольшое закругление углов */
-        background-color: #333; /* Цвет фона кнопок */
-        transition: background-color 0.3s ease;
     }
 
-    .navbar-links a:hover {
-        background-color: #555; /* Изменение фона при наведении */
-    }
 
     .navbar-links.navbar-left {
         justify-content: flex-start;
+        flex: 1;
+        /* Равномерное распределение пространства */
     }
 
     .navbar-links.navbar-right {
         justify-content: flex-end;
+        flex: 1;
+        /* Равномерное распределение пространства */
     }
 }
 
