@@ -185,6 +185,13 @@ body {
     }
 }
 
+@media (max-width: 400px) {
+    .logo-container {
+        max-width: 15%;
+        height: auto;
+    }
+}
+
 @media (max-width: 393px) {
     .navbar {
         display: flex;
@@ -234,13 +241,6 @@ body {
         justify-content: flex-end;
         flex: 1;
         /* Равномерное распределение пространства */
-    }
-}
-
-@media (max-width: 350px) {
-    .logo-container {
-        max-width: 15%;
-        height: auto;
     }
 }
 
